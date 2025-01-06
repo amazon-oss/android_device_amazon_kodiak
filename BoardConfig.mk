@@ -40,6 +40,9 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8974
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 TARGET_USES_QCOM_BSP := true
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # Inherit the prebuilt kernel files
 include device/amazon/kodiak-kernel/BoardConfigKernel.mk
 
