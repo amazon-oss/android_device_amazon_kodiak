@@ -43,6 +43,19 @@ TARGET_USES_QCOM_BSP := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+# Recovery (TWRP)
+ifeq ($(RECOVERY_VARIANT),twrp)
+DEVICE_RESOLUTION := 720x1280
+TW_NO_USB_STORAGE := false
+TW_TARGET_USES_QCOM_BSP := true
+TW_NO_EXFAT := true
+TW_NO_EXFAT_FUSE := true
+TW_INCLUDE_CRYPTO := true
+TW_NO_LEGACY_PROPS := true
+TW_ALWAYS_RMRF := true
+TW_THEME := portrait_hdpi
+endif
+
 # Inherit the prebuilt kernel files
 include device/amazon/kodiak-kernel/BoardConfigKernel.mk
 
