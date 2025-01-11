@@ -17,6 +17,10 @@ PRODUCT_PACKAGES += \
     libqservice \
     libqdMetaData
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    keystore.msm8974
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.qcom.rc \
