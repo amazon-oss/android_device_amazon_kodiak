@@ -4,6 +4,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Display
+PRODUCT_PACKAGES += \
+    copybit.msm8974 \
+    gralloc.msm8974 \
+    hwcomposer.msm8974 \
+    memtrack.msm8974
+
+PRODUCT_PACKAGES += \
+    liboverlay \
+    libqdutils \
+    libqservice \
+    libqdMetaData
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.qcom.rc \
