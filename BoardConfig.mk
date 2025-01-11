@@ -13,6 +13,11 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 
+# Bootloader
+TARGET_2NDINIT_DIR := /system/etc/
+TARGET_2NDINIT_FILE := resize_user_data.sh
+TARGET_HAS_LOCKED_BOOTLOADER := true
+
 # Global flags
 COMMON_GLOBAL_CFLAGS += -DAMAZON_LOG
 
