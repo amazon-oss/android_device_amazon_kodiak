@@ -75,6 +75,25 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.secure=0
 endif
 
+# Wi-Fi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_SYSTEM)/etc/wifi/WCNSS_qcom_cfg.ini \
+    $(LOCAL_PATH)/wifi/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+
+PRODUCT_PACKAGES += \
+    dhcpcd.conf \
+    hostapd \
+    hostapd.accept \
+    hostapd.deny \
+    hostapd_default.conf \
+    libwpa_client \
+    p2p_supplicant_overlay.conf \
+    wcnss_service \
+    wpa_supplicant \
+    wpa_supplicant.conf \
+    wpa_supplicant_overlay.conf
+
 # Inherit the proprietary files
 $(call inherit-product-if-exists, vendor/amazon/kodiak/kodiak-vendor.mk)
 
