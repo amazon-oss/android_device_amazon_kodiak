@@ -21,6 +21,11 @@ TARGET_BOOTLOADER_BOARD_NAME := ursa
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
+# Display
+OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
+TARGET_SCREEN_DENSITY := 320
+TARGET_USES_ION := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
@@ -56,6 +61,9 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msm8974
+
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
