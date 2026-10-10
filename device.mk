@@ -6,6 +6,10 @@
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.qcom \
