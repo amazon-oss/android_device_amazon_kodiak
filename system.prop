@@ -20,6 +20,7 @@ vendor.audio.offload.buffer.size.kb=32
 bluetooth.hfp.client=1
 ro.bluetooth.dun=false
 ro.bluetooth.sap=false
+ro.boot.btmacaddr=00:00:00:00:00:00
 ro.qualcomm.bt.hci_transport=smd
 vendor.qcom.bluetooth.soc=pronto
 
