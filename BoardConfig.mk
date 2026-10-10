@@ -16,5 +16,14 @@ TARGET_CPU_VARIANT_RUNTIME := krait
 # Binder
 TARGET_USES_64_BIT_BINDER := true
 
+# Bootloader
+TARGET_BOOTLOADER_BOARD_NAME := ursa
+TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
+
+# Platform
+BOARD_USES_QCOM_HARDWARE := true
+TARGET_BOARD_PLATFORM := msm8974
+
 # Inherit the proprietary files
 -include vendor/amazon/kodiak/BoardConfigVendor.mk
