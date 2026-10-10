@@ -52,6 +52,7 @@ TARGET_SCREEN_DENSITY := 320
 TARGET_USES_ION := true
 
 # Filesystem
+BOARD_ROOT_EXTRA_FOLDERS := firmware persist
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # HIDL
