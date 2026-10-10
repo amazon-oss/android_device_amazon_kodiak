@@ -83,6 +83,50 @@ vendor/lib/libssd.so|c3f50b44d7ff3371191a86ec17b865f5af207765
 vendor/bin/mpdecision|6b0e830c9537889bf2417b88ac5b3d5bc3c098f1
 vendor/lib/libqti-perfd-client.so|48c9d3be57e728af0e97710f417a18dddb5839cc
 
+# Radio - from FP2 FP2-gms-18.04.1
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|61ddb707d25a574a19315eb573e3cda5416b342e
+-vendor/app/shutdownlistener/shutdownlistener.apk|030ad7130d9a8bc3b5ec7ee91c911dbb3dec87f4
+vendor/bin/netmgrd|6d953fa4d4614ff6a56db9b7078be343da093e44
+vendor/bin/qmuxd|92a4939c729d1ce92aabad163a0eaf9e14d8201c
+vendor/bin/radish|ebc281a1e0e684959ca245584f207c7d27645f5d
+vendor/bin/rfs_access|32dccca9c68d5ce7385e2bb0a3f714f2d41bc4e4
+vendor/bin/rmt_storage|0b83d0b7fd809d7c2cdcc0dc1ceb24f776e4c104
+vendor/etc/data/dsi_config.xml|33dd56b7dcf4b04db0a04f5c834c386345b002a7
+vendor/etc/data/netmgr_config.xml|b013b5cb704cbd6fa8eedfb279e1ef3d4cc12a6c
+vendor/etc/permissions/qcnvitems.xml|dd47edbccc24a5c254dca18250c0136ecab4f0d6
+vendor/etc/permissions/qcrilhook.xml|5a65b197fbc65e3e89e829d07da11904eae3e938
+vendor/framework/qcnvitems.jar|9465dbca4e609ad5746ab111268bbc68fa789977
+vendor/framework/qcrilhook.jar|472e82acd5cceb3fc6b3c8a0224208d1e2191975
+vendor/lib/libcneapiclient.so|80b7e1293825b83e330ef84038193d285ee47217
+vendor/lib/libconfigdb.so|43b99efe39cf78a2240d7d7b4a78e1958bf579d5
+vendor/lib/liblqe.so|6141538a8a0a894cec74db129948d262a1aa82f7
+vendor/lib/libmdmdetect.so|dbe0744c56cfeae60395e533681eafbdc4a3c2d3
+vendor/lib/libnetmgr.so|51dea74ca5f8841ef6fd4167bcb0fd71550e383b
+vendor/lib/libperipheral_client.so|fd0e1592f03b8d8fcb922a97f2769f7f30e4bd70
+vendor/lib/libril-qc-qmi-1.so|5a6393e40feec9175a7b8c520dca5857c3099605
+vendor/lib/libril-qc-radioconfig.so|3aa1f9ce1556d33b07706f772226de0b232f2184
+vendor/lib/libril-qcril-hook-oem.so|8ec58acb0604e79e8a580a9b8fc499c236ff3b5a
+vendor/lib/libxml.so|4cb66136c4030c6681873dfb69fc6d3cf175b9d6
+
+# Radio (QMI) - from FP2 FP2-gms-18.04.1
+vendor/bin/irsc_util|e95cd957ec2d95b072f76734a1557d03bdc30702
+vendor/lib/libdsi_netctrl.so|69c1012cccb6e36e58dc4fa99e4767c6a9b59af9
+-vendor/lib/libdsutils.so|09a39b994b859f01cbf6806589ca1db781d00c7e
+-vendor/lib/libidl.so|d95c9e2039174155487685ae6824186435e8accb
+-vendor/lib/libqcci_legacy.so|0daddc798646c361ee3d9905e3a46af5e095f7ad
+vendor/lib/libqdi.so|12a6f0fcdb1819a81ee57b880d279559dd080484
+vendor/lib/libqdp.so|c523fdf4be1cb80e0a710ce48c8fbc47dce568b1
+-vendor/lib/libqmi.so|865298e6ecb0bd87502277992ad561239bbac947
+vendor/lib/libqmi_cci.so|47d853f34e28064d528f6e1b9cd562bfa8a31d01
+vendor/lib/libqmi_client_helper.so|aad03fd443024f735750ac52506217a5d0f25957
+-vendor/lib/libqmi_client_qmux.so|7b72b6199453b223f9d7c0a85eeb66b4568eedc5
+vendor/lib/libqmi_common_so.so|1e87deab27664b92036a8bb2b6f80165bc9c04ed
+vendor/lib/libqmi_csi.so|2ff5edf609538f25f97b25af8a107255e4ed3a0c
+vendor/lib/libqmi_encdec.so|fb31f526a55f888abfe12a5f0be306853b903888
+-vendor/lib/libqmiservices.so|974e89bf938e3b9f0462d02e06d38801dcd2fea1
+vendor/lib/libsmemlog.so|925737c3b49244f7e50e169b22a0a6dbb07592c7
+vendor/lib/libsystem_health_mon.so|308ec83c840ecb440c855150fc8870199298fe27
+
 # Vibrator (Firmware)
 vendor/firmware/drv2604.bin
 

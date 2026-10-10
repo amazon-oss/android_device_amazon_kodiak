@@ -102,6 +102,19 @@ on boot
     chmod 0660 /sys/class/rfkill/rfkill0/state
     mkdir /persist/bluetooth 0770 bluetooth bluetooth
 
+    # Create QMUX daemon socket area
+    mkdir /dev/socket/qmux_radio 0770 radio radio
+    chmod 2770 /dev/socket/qmux_radio
+    mkdir /dev/socket/qmux_audio 0770 media audio
+    chmod 2770 /dev/socket/qmux_audio
+    mkdir /dev/socket/qmux_bluetooth 0770 bluetooth bluetooth
+    chmod 2770 /dev/socket/qmux_bluetooth
+    mkdir /dev/socket/qmux_gps 0770 gps gps
+    chmod 2770 /dev/socket/qmux_gps
+
+    # Create NETMGR daemon socket area
+    mkdir /dev/socket/netmgr 0750 radio radio
+
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
@@ -124,6 +137,31 @@ on property:init.svc.surfaceflinger=stopped
 
 on property:init.svc.surfaceflinger=running
     start ppd
+
+service rmt_storage /vendor/bin/rmt_storage
+    class core
+    user root
+    group system wakelock
+
+service rfs_access /vendor/bin/rfs_access
+    class core
+    user system
+    group system net_raw
+
+service qmuxd /vendor/bin/qmuxd
+    class main
+    user radio
+    group radio audio bluetooth gps diag oem_2950
+
+service netmgrd /vendor/bin/netmgrd
+    class main
+    user root
+    group root wifi wakelock radio inet oem_2950
+
+service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
+    class main
+    user root
+    oneshot
 
 service vendor.qseecomd /vendor/bin/qseecomd
     class core
