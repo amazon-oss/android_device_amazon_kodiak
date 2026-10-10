@@ -74,3 +74,10 @@ vendor/lib/libdrmfs.so|bef37f450724788fbe976afe0b3afcd24893725f
 vendor/lib/libdrmtime.so|ef1ebf2d33027c3e778c6297e7bf633b3f0a942b
 vendor/lib/librpmb.so|09b7d32ccda91f3345f6804a14e4dae3627a20a3
 vendor/lib/libssd.so|c3f50b44d7ff3371191a86ec17b865f5af207765
+
+# Wi-Fi
+etc/firmware/wlan/prima/WCNSS_cfg.dat:vendor/firmware/wlan/prima/WCNSS_cfg.dat
+etc/wifi/WCNSS_qcom_wlan_nv.bin:vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+
+# Wi-Fi - from FP2 FP2-gms-18.04.1
+vendor/lib/libwcnss_qmi.so|02fa5e70e0e225bb5346fd8e85b1c17bf21d8caa
