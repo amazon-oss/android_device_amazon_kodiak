@@ -127,6 +127,11 @@ vendor/lib/libqmi_encdec.so|fb31f526a55f888abfe12a5f0be306853b903888
 vendor/lib/libsmemlog.so|925737c3b49244f7e50e169b22a0a6dbb07592c7
 vendor/lib/libsystem_health_mon.so|308ec83c840ecb440c855150fc8870199298fe27
 
+# Thermal - from FP2 FP2-gms-18.04.1
+vendor/bin/thermal-engine|9beaf8a4d9848ab092e4e22efd86e3f43e9b5e3a
+vendor/lib/libthermalclient.so|85f3dce7d4b4222a6436d8dab2695c91bcbd78ec
+vendor/lib/libthermalioctl.so|bdae153511e1486b6044b5a3c9dd32cc255dc83c
+
 # Time services - from FP2 FP2-gms-18.04.1
 -vendor/app/TimeService/TimeService.apk|0a1f2c93f007acd722a4d75e90ad15f414b049bb
 vendor/bin/time_daemon|14803d2c34c80eb02c549ca40f7d68f996fd1649
