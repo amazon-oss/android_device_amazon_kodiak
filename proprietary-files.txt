@@ -29,3 +29,11 @@ vendor/bin/mm-pp-daemon|de73bf39b7a672b63ad28943fccb36b17357dcf3
 vendor/lib/libdisp-aba.so|742144eed839ebdabda41f4def0c8b70668dca6f
 vendor/lib/libmm-abl.so|5d00d0e72f7d74f74d5ee64eff014b675b1f0b2b
 vendor/lib/libmm-abl-oem.so|c8b1ef1c7e125c6ef4354c0ce587f8c8be538ce5
+
+# Keymaster - from FP2 FP2-gms-18.04.1
+vendor/bin/qseecomd|916afa023c89ef2c6958b9a00889e8e5a8bc693e
+vendor/lib/libQSEEComAPI.so|7833be70868fe405d530cd8db9ae982e8c9d8315
+vendor/lib/libdrmfs.so|bef37f450724788fbe976afe0b3afcd24893725f
+vendor/lib/libdrmtime.so|ef1ebf2d33027c3e778c6297e7bf633b3f0a942b
+vendor/lib/librpmb.so|09b7d32ccda91f3345f6804a14e4dae3627a20a3
+vendor/lib/libssd.so|c3f50b44d7ff3371191a86ec17b865f5af207765
