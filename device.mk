@@ -61,6 +61,9 @@ PRODUCT_PACKAGES += \
     libactuator_bu63164_camera \
     Snap
 
+# Dalvik
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+
 # Display
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
