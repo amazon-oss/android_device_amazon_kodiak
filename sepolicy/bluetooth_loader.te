@@ -1,0 +1,2 @@
+allow bluetooth_loader proc_idme:dir search;
+allow bluetooth_loader proc_idme:file r_file_perms;
