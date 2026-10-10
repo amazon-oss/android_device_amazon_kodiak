@@ -133,6 +133,15 @@ vendor/lib/libqmi_encdec.so|fb31f526a55f888abfe12a5f0be306853b903888
 vendor/lib/libsmemlog.so|925737c3b49244f7e50e169b22a0a6dbb07592c7
 vendor/lib/libsystem_health_mon.so|308ec83c840ecb440c855150fc8870199298fe27
 
+# Sensors
+etc/sensor_def_qcomdev.conf
+
+# Sensors - from FP2 FP2-gms-18.04.1
+vendor/bin/sensors.qcom|063cfe5e3d4ab2e81a57c9812a0d7f199eedd331
+vendor/lib/hw/sensors.msm8974.so|ee92001d128fb4511559167fd09ef378f21d098c
+vendor/lib/libsensor1.so|ffb7ff75dc6c3d4ed1f441e14b3e36f4fd374066
+vendor/lib/libsensor_reg.so|ad25914628e2194f7df5691ab01859f5c5de2a1c
+
 # Thermal - from FP2 FP2-gms-18.04.1
 vendor/bin/thermal-engine|9beaf8a4d9848ab092e4e22efd86e3f43e9b5e3a
 vendor/lib/libthermalclient.so|85f3dce7d4b4222a6436d8dab2695c91bcbd78ec
