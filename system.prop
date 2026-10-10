@@ -24,6 +24,11 @@ ro.boot.btmacaddr=00:00:00:00:00:00
 ro.qualcomm.bt.hci_transport=smd
 vendor.qcom.bluetooth.soc=pronto
 
+# Camera
+persist.camera.tintless=enable
+ro.qc.sdk.camera.facialproc=false
+ro.qc.sdk.gestures.camera=false
+
 # Display
 debug.composition.type=c2d
 debug.egl.hw=1

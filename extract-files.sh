@@ -62,6 +62,15 @@ function blob_fixup() {
             sed -i "s|/etc/audio/speakers|/vendor/etc/speaker|g" "${2}"
             "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
             ;;
+        vendor/lib/libmmcamera_imx132.so)
+            sed -i "s/\x20\x43\x07\x01\x00\x00\x02/\x20\x43\x07\x01\x00\x00\x01/" "${2}"
+            ;;
+        vendor/lib/libmmcamera_imx135.so)
+            sed -i "s/\x20\x43\x1f\x01/\x30\x42\x1f\x01/; s/dw9714\x00v/bu63164\x00/" "${2}"
+            ;;
+        vendor/lib/libmmcamera2_sensor_modules.so)
+            sed -i "s/ov8865_q8v18a/imx135\x00\x00\x00\x00\x00\x00\x00/; s/ov2685/imx132/" "${2}"
+            ;;
     esac
 }
 
