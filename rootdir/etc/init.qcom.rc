@@ -83,6 +83,9 @@ on post-fs-data
     mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa_supplicant 0770 wifi wifi
 
+    # Create /data/vendor/time folder for time-services
+    mkdir /data/vendor/time/ 0700 system system
+
     # Create PERFD daemon related dirs
     mkdir /data/system/perfd 0770 root system
     chmod 2770 /data/system/perfd
@@ -162,6 +165,12 @@ service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class main
     user root
     oneshot
+
+service time_daemon /vendor/bin/time_daemon
+    class late_start
+    user system
+    group net_raw
+    capabilities SYS_TIME
 
 service vendor.qseecomd /vendor/bin/qseecomd
     class core

@@ -127,6 +127,12 @@ vendor/lib/libqmi_encdec.so|fb31f526a55f888abfe12a5f0be306853b903888
 vendor/lib/libsmemlog.so|925737c3b49244f7e50e169b22a0a6dbb07592c7
 vendor/lib/libsystem_health_mon.so|308ec83c840ecb440c855150fc8870199298fe27
 
+# Time services - from FP2 FP2-gms-18.04.1
+-vendor/app/TimeService/TimeService.apk|0a1f2c93f007acd722a4d75e90ad15f414b049bb
+vendor/bin/time_daemon|14803d2c34c80eb02c549ca40f7d68f996fd1649
+-vendor/lib/libTimeService.so|a0807fa657bf0aa549c8cda380dec5f9d33f9809
+-vendor/lib/libtime_genoff.so|01040fa6d66993d94ac5237ec5ac913767826d04
+
 # Vibrator (Firmware)
 vendor/firmware/drv2604.bin
 
