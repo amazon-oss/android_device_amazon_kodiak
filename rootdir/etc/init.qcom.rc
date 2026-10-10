@@ -105,6 +105,10 @@ on post-fs-data
     # Create /data/vendor/time folder for time-services
     mkdir /data/vendor/time/ 0700 system system
 
+    # Create NFC HAL directories
+    mkdir /data/vendor/nfc 0770 nfc nfc
+    mkdir /data/vendor/nfc/param 0770 nfc nfc
+
     # Create PERFD daemon related dirs
     mkdir /data/system/perfd 0770 root system
     chmod 2770 /data/system/perfd
