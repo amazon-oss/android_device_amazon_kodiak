@@ -62,6 +62,9 @@ function blob_fixup() {
             sed -i "s|/etc/audio/speakers|/vendor/etc/speaker|g" "${2}"
             "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
             ;;
+        vendor/lib/mediadrm/libwvdrmengine.so)
+            "${PATCHELF}" --replace-needed "libprotobuf-cpp-lite.so" "libprotobuf-cpp-lite-v29.so" "${2}"
+            ;;
         vendor/lib/libmmcamera_imx132.so)
             sed -i "s/\x20\x43\x07\x01\x00\x00\x02/\x20\x43\x07\x01\x00\x00\x01/" "${2}"
             ;;
