@@ -79,6 +79,9 @@ vendor/lib/libdrmtime.so|ef1ebf2d33027c3e778c6297e7bf633b3f0a942b
 vendor/lib/librpmb.so|09b7d32ccda91f3345f6804a14e4dae3627a20a3
 vendor/lib/libssd.so|c3f50b44d7ff3371191a86ec17b865f5af207765
 
+# Vibrator (Firmware)
+vendor/firmware/drv2604.bin
+
 # Wi-Fi
 etc/firmware/wlan/prima/WCNSS_cfg.dat:vendor/firmware/wlan/prima/WCNSS_cfg.dat
 etc/wifi/WCNSS_qcom_wlan_nv.bin:vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
