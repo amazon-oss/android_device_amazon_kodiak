@@ -50,5 +50,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := msm8974
 
+# Recovery
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+
 # Inherit the proprietary files
 -include vendor/amazon/kodiak/BoardConfigVendor.mk
