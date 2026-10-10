@@ -53,6 +53,18 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib/libacdbloader.so|vendor/lib/libacdbrtac.so|vendor/lib/libadiertac.so|vendor/lib/libaudcal.so|vendor/lib/libdiag.so)
+            "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
+            ;;
+        vendor/lib/libaudio-ExternalSpeakerAmps.so)
+            sed -i "s|/etc/audio/speakers|/vendor/etc/speaker|g" "${2}"
+            "${PATCHELF}" --add-needed "libamazonlog.so" "${2}"
+            ;;
+    esac
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 

@@ -1,5 +1,42 @@
 # Unpinned blobs from Amazon/juniper/kodiak:4.4.4/KTU84P/35.4.6.6_user_466001420:user/release-keys
 
+# Audio
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libaudcal.so
+vendor/lib/libdiag.so
+
+# Audio (ACDB)
+etc/acdbdata/DUKE/Bluetooth_cal.acdb:vendor/etc/acdbdata/DUKE/Bluetooth_cal.acdb
+etc/acdbdata/DUKE/Bluetooth_cal.acdb.DE:vendor/etc/acdbdata/DUKE/Bluetooth_cal.acdb.DE
+etc/acdbdata/DUKE/Bluetooth_cal.acdb.GB:vendor/etc/acdbdata/DUKE/Bluetooth_cal.acdb.GB
+etc/acdbdata/DUKE/General_cal.acdb:vendor/etc/acdbdata/DUKE/General_cal.acdb
+etc/acdbdata/DUKE/Global_cal.acdb:vendor/etc/acdbdata/DUKE/Global_cal.acdb
+etc/acdbdata/DUKE/Handset_cal.acdb:vendor/etc/acdbdata/DUKE/Handset_cal.acdb
+etc/acdbdata/DUKE/Hdmi_cal.acdb:vendor/etc/acdbdata/DUKE/Hdmi_cal.acdb
+etc/acdbdata/DUKE/Headset_cal.acdb:vendor/etc/acdbdata/DUKE/Headset_cal.acdb
+etc/acdbdata/DUKE/Headset_cal.acdb.DE:vendor/etc/acdbdata/DUKE/Headset_cal.acdb.DE
+etc/acdbdata/DUKE/Headset_cal.acdb.GB:vendor/etc/acdbdata/DUKE/Headset_cal.acdb.GB
+etc/acdbdata/DUKE/Speaker_cal.acdb:vendor/etc/acdbdata/DUKE/Speaker_cal.acdb
+
+# Audio (Amplifier)
+-lib/libaudio-ExternalSpeakerAmps.so:vendor/lib/libaudio-ExternalSpeakerAmps.so
+-lib/libaudio-NxpTfa9887.so:vendor/lib/libaudio-NxpTfa9887.so
+
+# Audio (Amplifier configs)
+etc/audio/speakers/coldboot.patch:vendor/etc/speaker/coldboot.patch
+etc/audio/speakers/default_settings.config:vendor/etc/speaker/default_settings.config
+etc/audio/speakers/default_settings_left.speaker:vendor/etc/speaker/default_settings_left.speaker
+etc/audio/speakers/default_settings_right.speaker:vendor/etc/speaker/default_settings_right.speaker
+etc/audio/speakers/dsp_software.patch:vendor/etc/speaker/dsp_software.patch
+etc/audio/speakers/music/00.preset:vendor/etc/speaker/music/00.preset
+etc/audio/speakers/music/speakers.eq:vendor/etc/speaker/music/speakers.eq
+etc/audio/speakers/use_cases:vendor/etc/speaker/use_cases
+etc/audio/speakers/voice/00.preset:vendor/etc/speaker/voice/00.preset
+etc/audio/speakers/voice/speakers.eq:vendor/etc/speaker/voice/speakers.eq
+etc/audio/speakers/volume_steps:vendor/etc/speaker/volume_steps
+
 # Display - from FP2 FP2-gms-18.04.1
 vendor/lib/egl/eglsubAndroid.so|b8a5790c5b4ba4cf0018c94066104610c821ed8e
 vendor/lib/egl/libEGL_adreno.so|cd29673e990dba8158e961e287a79dfbd852d095

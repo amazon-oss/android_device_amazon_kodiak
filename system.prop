@@ -1,3 +1,21 @@
+# Audio
+dev.pm.dyn_samplingrate=1
+persist.audio.calfile0=/vendor/etc/acdbdata/DUKE/Bluetooth_cal.acdb
+persist.audio.calfile1=/vendor/etc/acdbdata/DUKE/General_cal.acdb
+persist.audio.calfile2=/vendor/etc/acdbdata/DUKE/Global_cal.acdb
+persist.audio.calfile3=/vendor/etc/acdbdata/DUKE/Handset_cal.acdb
+persist.audio.calfile4=/vendor/etc/acdbdata/DUKE/Hdmi_cal.acdb
+persist.audio.calfile5=/vendor/etc/acdbdata/DUKE/Headset_cal.acdb
+persist.audio.calfile6=/vendor/etc/acdbdata/DUKE/Speaker_cal.acdb
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.speaker.prot.enable=false
+ro.config.media_vol_steps=25
+ro.vendor.audio.sdk.fluencetype=fluence
+ro.vendor.audio.sdk.ssr=false
+vendor.audio.offload.buffer.size.kb=32
+
 # Display
 debug.composition.type=c2d
 debug.egl.hw=1

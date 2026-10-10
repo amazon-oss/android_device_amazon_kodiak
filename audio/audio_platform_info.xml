@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<audio_platform_info>
+    <acdb_ids>
+        <device name="SND_DEVICE_OUT_SPEAKER" acdb_id="15"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_REVERSE" acdb_id="15"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" acdb_id="15"/>
+        <device name="SND_DEVICE_IN_HANDSET_MIC" acdb_id="52"/>
+        <device name="SND_DEVICE_IN_CAMCORDER_MIC" acdb_id="52"/>
+        <device name="SND_DEVICE_IN_VOICE_SPEAKER_DMIC" acdb_id="42"/>
+    </acdb_ids>
+    <backend_names>
+        <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_REVERSE" backend="speaker"/>
+        <device name="SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES" backend="speaker-and-headphones"/>
+        <device name="SND_DEVICE_OUT_VOICE_SPEAKER" backend="voice-speaker"/>
+    </backend_names>
+</audio_platform_info>

@@ -182,3 +182,6 @@
 
 # NFC
 /dev/pn544                0600   nfc        nfc
+
+# Speaker amplifiers
+/dev/i2c-8                0660   media      audio

@@ -67,6 +67,9 @@ on post-fs-data
 
     mkdir /data/media 0770 media_rw media_rw
 
+    # Create directory used by audio subsystem
+    mkdir /data/misc/audio 0770 audio audio
+
     # Create directory for TZ Apps
     mkdir /data/misc/qsee 0770 system system
 
