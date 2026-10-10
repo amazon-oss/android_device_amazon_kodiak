@@ -1,5 +1,11 @@
 # Unpinned blobs from Amazon/juniper/kodiak:4.4.4/KTU84P/35.4.6.6_user_466001420:user/release-keys
 
+# ADSP - from FP2 FP2-gms-18.04.1
+vendor/bin/adsprpcd|71a5feb59e7996aab52e84013f6c71694c99dbb6
+vendor/lib/libadsprpc.so|6ae394eff09d517db6dfa9bede9f535b73a71e40
+vendor/lib/libfastcvadsp_stub.so|f9a31736bf33d60c1f5c077f04d7e95df48cbb2a
+vendor/lib/libfastcvopt.so|08c824e3da8bdba1611dee242afa42a15d0d0853
+
 # Audio
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
