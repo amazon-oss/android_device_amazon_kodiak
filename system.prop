@@ -16,6 +16,13 @@ ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
 vendor.audio.offload.buffer.size.kb=32
 
+# Bluetooth
+bluetooth.hfp.client=1
+ro.bluetooth.dun=false
+ro.bluetooth.sap=false
+ro.qualcomm.bt.hci_transport=smd
+vendor.qcom.bluetooth.soc=pronto
+
 # Display
 debug.composition.type=c2d
 debug.egl.hw=1

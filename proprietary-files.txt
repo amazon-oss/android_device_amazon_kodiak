@@ -37,6 +37,10 @@ etc/audio/speakers/voice/00.preset:vendor/etc/speaker/voice/00.preset
 etc/audio/speakers/voice/speakers.eq:vendor/etc/speaker/voice/speakers.eq
 etc/audio/speakers/volume_steps:vendor/etc/speaker/volume_steps
 
+# Bluetooth - from FP2 FP2-gms-18.04.1
+vendor/bin/hci_qcomm_init|2ee614558522c5886930661fb5a9329a3ac63e9e
+vendor/lib/libbtnv.so|63c2e67d0837bbc32e49c83869fcd0c67d58333d
+
 # Display - from FP2 FP2-gms-18.04.1
 vendor/lib/egl/eglsubAndroid.so|b8a5790c5b4ba4cf0018c94066104610c821ed8e
 vendor/lib/egl/libEGL_adreno.so|cd29673e990dba8158e961e287a79dfbd852d095

@@ -74,7 +74,16 @@ case $LE_POWER_CLASS in
      logi "LE Power Class: To override, Before turning BT ON; setprop qcom.bt.le_dev_pwr_class <1 or 2 or 3>";;
 esac
 
-eval $(/vendor/bin/hci_qcomm_init -e $PWR_CLASS $LE_PWR_CLASS && echo "exit_code_hci_qcomm_init=0" || echo "exit_code_hci_qcomm_init=1")
+BT_MAC=`cat /proc/idme/bt_mac_addr 2>/dev/null`
+if [ ${#BT_MAC} -ge 12 ]; then
+  BD_ADDR="-b ${BT_MAC:0:2}.${BT_MAC:2:2}.${BT_MAC:4:2}.${BT_MAC:6:2}.${BT_MAC:8:2}.${BT_MAC:10:2}"
+  logi "BD address: ${BD_ADDR}"
+else
+  BD_ADDR=""
+  logi "BD address: not found in idme"
+fi
+
+eval $(/vendor/bin/hci_qcomm_init -e $PWR_CLASS $LE_PWR_CLASS $BD_ADDR && echo "exit_code_hci_qcomm_init=0" || echo "exit_code_hci_qcomm_init=1")
 
 case $exit_code_hci_qcomm_init in
   0) logi "Bluetooth QSoC firmware download succeeded, $BTS_DEVICE $BTS_TYPE $BTS_BAUD $BTS_ADDRESS";;
