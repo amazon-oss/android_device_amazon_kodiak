@@ -77,6 +77,15 @@ vendor/lib/libdisp-aba.so|742144eed839ebdabda41f4def0c8b70668dca6f
 vendor/lib/libmm-abl.so|5d00d0e72f7d74f74d5ee64eff014b675b1f0b2b
 vendor/lib/libmm-abl-oem.so|c8b1ef1c7e125c6ef4354c0ce587f8c8be538ce5
 
+# GPS - from FP2 FP2-gms-18.04.1
+vendor/bin/loc_launcher|88b17157ab3d088aa0c4a3cb8163978d6a2168e4
+vendor/lib/libloc_api_v02.so|36b872293fc76f15e005ec55b0724c9583629e2a
+vendor/lib/hw/flp.default.so|eed0842003764b602c072ddfab0ef38fbdff8c62
+vendor/lib/libflp.so|532f12b0e3e1f71eb4dd85239b357bf2a0c8cca6
+vendor/lib/libgeofence.so|4929156f274c16b4e834db4f2c050c1f67607848
+vendor/lib/libizat_core.so|8da21c500def47067e8d6351034ffbca39c3c928
+vendor/lib/liblbs_core.so|a06d4fb42ed38851f9eaf005090f80f665434b3f
+
 # Keymaster - from FP2 FP2-gms-18.04.1
 vendor/bin/qseecomd|916afa023c89ef2c6958b9a00889e8e5a8bc693e
 vendor/lib/libQSEEComAPI.so|7833be70868fe405d530cd8db9ae982e8c9d8315

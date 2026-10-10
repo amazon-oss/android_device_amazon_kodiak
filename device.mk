@@ -67,6 +67,21 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
 
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/flp.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/flp.conf \
+    $(LOCAL_PATH)/gps/gps.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/gps.conf \
+    $(LOCAL_PATH)/gps/izat.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/izat.conf \
+    $(LOCAL_PATH)/gps/sap.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/sap.conf
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl.legacy \
+    android.hardware.gnss@1.0-service.legacy \
+    gps.msm8974
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \

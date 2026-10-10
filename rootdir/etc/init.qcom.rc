@@ -58,6 +58,9 @@ on fs
     mkdir /persist/data/sfs 0700 system system
     mkdir /persist/data/tz 0700 system system
 
+    # GnssConfiguration doesn't actually look at gps.conf, just the debug file
+    mount none /system/etc/gps.conf /system/etc/gps_debug.conf bind
+
 on post-fs-data
     mkdir /data/tombstones 0771 system system
     mkdir /tombstones/modem 0771 system system
@@ -72,6 +75,14 @@ on post-fs-data
 
     # Bluetooth
     mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
+
+    # Create directories for Location services
+    mkdir /data/misc/location 0770 gps gps
+    mkdir /data/misc/location/mq 0770 gps gps
+    mkdir /data/misc/location/xtwifi 0770 gps gps
+    mkdir /data/misc/location/gpsone_d 0770 system gps
+    mkdir /data/misc/location/quipc 0770 gps gps
+    mkdir /data/misc/location/gsiff 0770 gps gps
 
     # Create directory for TZ Apps
     mkdir /data/misc/qsee 0770 system system
@@ -165,6 +176,10 @@ service qmuxd /vendor/bin/qmuxd
     class main
     user radio
     group radio audio bluetooth gps diag oem_2950
+
+service loc_launcher /vendor/bin/loc_launcher
+    class late_start
+    group gps inet net_raw diag oem_2950 net_admin wifi
 
 service netmgrd /vendor/bin/netmgrd
     class main
