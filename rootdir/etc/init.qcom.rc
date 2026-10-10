@@ -139,6 +139,11 @@ on boot
     # Create NETMGR daemon socket area
     mkdir /dev/socket/netmgr 0750 radio radio
 
+    # Camera Recording
+    mkdir /dev/video
+    symlink /dev/video32 /dev/video/venus_dec
+    symlink /dev/video33 /dev/video/venus_enc
+
     # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 

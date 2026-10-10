@@ -94,6 +94,14 @@ vendor/lib/libdrmtime.so|ef1ebf2d33027c3e778c6297e7bf633b3f0a942b
 vendor/lib/librpmb.so|09b7d32ccda91f3345f6804a14e4dae3627a20a3
 vendor/lib/libssd.so|c3f50b44d7ff3371191a86ec17b865f5af207765
 
+# Media (Firmware)
+etc/firmware/venus.b00:vendor/firmware/venus.b00
+etc/firmware/venus.b01:vendor/firmware/venus.b01
+etc/firmware/venus.b02:vendor/firmware/venus.b02
+etc/firmware/venus.b03:vendor/firmware/venus.b03
+etc/firmware/venus.b04:vendor/firmware/venus.b04
+etc/firmware/venus.mdt:vendor/firmware/venus.mdt
+
 # Perf - from FP2 FP2-gms-18.04.1
 vendor/bin/mpdecision|6b0e830c9537889bf2417b88ac5b3d5bc3c098f1
 vendor/lib/libqti-perfd-client.so|48c9d3be57e728af0e97710f417a18dddb5839cc
